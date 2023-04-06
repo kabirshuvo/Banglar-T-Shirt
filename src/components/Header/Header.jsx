@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
     return (
-        <nav style={{marginRight: '1rem'}}>
+        <nav >
             <Link to='/'>Home</Link>
             <Link to='/orders'>Orders Review</Link>
             <Link to='/about'>About</Link>
