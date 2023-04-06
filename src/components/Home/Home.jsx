@@ -1,13 +1,12 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
-import Header from '../Header/Header';
+import { useLoaderData } from 'react-router-dom';
 
 
 const Home = () => {
+    const tShirts = useLoaderData();
     return (
         <div>
-            <Header></Header>
-            <Outlet></Outlet>
+           <h1>T-Shirt Count: {tShirts.length}</h1>
         </div>
     );
 };
