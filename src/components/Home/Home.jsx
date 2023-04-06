@@ -1,12 +1,15 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import TShirt from '../TShirt/TShirt';
 
 
 const Home = () => {
     const tShirts = useLoaderData();
     return (
         <div>
-           <h1>T-Shirt Count: {tShirts.length}</h1>
+        {
+            tShirts.map(tShirt => <TShirt key={tShirt._id} tShirt={tShirt}></TShirt>)
+        }
         </div>
     );
 };
