@@ -5,8 +5,8 @@ import './TShirt.css';
 const TShirt = ({tShirt, handleAddtoCart}) => {
     const{picture, name, price, gender} = tShirt;
     return (
-        <div className='single-t-Shirt'>
-            <h1>{name}</h1>
+        <div className='single-t-Shirt' style={{padding: '1rem', margin: '1rem'}}>
+            <h4 style={{color: 'white'}}>{name}</h4>
             <img src={picture} alt="" />
             <div>
                 <p>Price: ${price}</p>
