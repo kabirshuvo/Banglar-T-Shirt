@@ -1,0 +1,12 @@
+.grandpapa,
+.grandpapa div {
+  border: 2px solid goldenrod;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  width: fit-content;
+}
+
+.flex {
+  display: flex;
+}
