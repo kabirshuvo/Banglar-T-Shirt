@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { RingContext } from '../../Grandpa/Grandpa';
 
 const Myself = ({ring}) => {
+    const uRing = useContext(RingContext);
     return (
         <div>
             <h3>This is me</h3>
-            <p>The {ring}</p>
+            <p>The {uRing}</p>
         </div>
     );
 };
