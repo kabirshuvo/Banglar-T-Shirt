@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-hot-toast';
 import { useLoaderData } from 'react-router-dom';
 import Cart from '../Cart/Cart';
 import TShirt from '../TShirt/TShirt';
@@ -11,8 +12,14 @@ const Home = () => {
     const [cart, setCart] = useState([])
 
     const handleAddtoCart = (tShirt) => {
-       const newCart = [...cart, tShirt];
-       setCart(newCart);
+        const exist = cart.find(ts => ts._id === tShirt._id);
+        if(exist){
+            toast('Item Already Exist')
+        } else {
+            const newCart = [...cart, tShirt];
+            setCart(newCart);
+        }
+     
     }
     const handleRemoveFromCart = (id) => {
            const remaining = cart.filter(ts => ts._id !== id);
