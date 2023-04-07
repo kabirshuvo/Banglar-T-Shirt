@@ -1,0 +1,10 @@
+.single-t-Shirt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.single-t-Shirt Link {
+  margin: auto 0;
+}

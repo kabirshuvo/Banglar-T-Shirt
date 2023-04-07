@@ -1,0 +1,17 @@
+.home-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  justify-content: space-between;
+}
+.t-shirt-container {
+  background-color: rebeccapurple;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.t-shirt-container img {
+  width: 11rem;
+  height: 15rem;
+  border: none;
+  border-radius: 1rem;
+}
